@@ -1,0 +1,26 @@
+TDD Kata for Refactoring a Finicky 3rd Party DLL (eg. has no dev license) to Depedency Injection with Mocks
+===========================================================================================================
+
+In this example, the Gaddzeit.Kata.Utils directory contains a class, FinickyThirdPartyApp, 
+whose single method, DoSomethingProprietary() throws an exception that is it not licensed
+for DEV machines.
+
+In an initial version, this 3rd party class is instantiated within a local custom class.
+When you try and write a test for the custom class, the test fails because it hits the 
+DEV licensing limitation exception.
+
+In this example, we see a resolution by:
+1) changing the custom class to accept an interface injection to its constructor,
+   for a new interface IFinickyWrapper.
+2) adding Rhino.Mocks to the test class and mocking the IFinickyWrapper interface
+3) passing the test
+4) creating a custom implementation of the interface which calls to the problematic
+   3rd party class.
+   
+The point is that the test can pass, because the SYSTEM UNDER TEST, the custom class, ONLY
+needs to verify that it is correctly calling to the 3rd party class, NOT that the 3rd
+party class is succeeding. (This is a unit test, not an integration test.)
+
+From here, you could take the code further to do integration testing with an IOC container,
+but for the purposes of this kata, promoting the problematic 3rd party app to a wrapper class
+with a mockable interface resolves the problem.

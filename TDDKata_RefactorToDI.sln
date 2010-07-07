@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gaddzeit.Kata.Utils", "Gaddzeit.Kata.Utils\Gaddzeit.Kata.Utils.csproj", "{E9E84997-D857-492F-9CF0-10219FCC95E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gaddzeit.Kata.Tests.Unit", "Gaddzeit.Kata.Tests.Unit\Gaddzeit.Kata.Tests.Unit.csproj", "{99504C65-257D-4BBE-B32E-35D79BB3B92F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B2B20122-6458-42FC-AACD-55894C12EB2D}"
+	ProjectSection(SolutionItems) = preProject
+		README = README
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9E84997-D857-492F-9CF0-10219FCC95E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9E84997-D857-492F-9CF0-10219FCC95E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9E84997-D857-492F-9CF0-10219FCC95E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9E84997-D857-492F-9CF0-10219FCC95E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99504C65-257D-4BBE-B32E-35D79BB3B92F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99504C65-257D-4BBE-B32E-35D79BB3B92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99504C65-257D-4BBE-B32E-35D79BB3B92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99504C65-257D-4BBE-B32E-35D79BB3B92F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
