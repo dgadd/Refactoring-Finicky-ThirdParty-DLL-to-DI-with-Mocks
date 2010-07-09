@@ -1,6 +1,9 @@
 TDD Kata for Refactoring a Finicky 3rd Party DLL (eg. has no dev license) to Depedency Injection with Mocks
 ===========================================================================================================
 
+For a full blog post describing the steps in the kata, go here:
+http://codingsolutions.blogspot.com/2010/07/tdd-kata-for-decoupling-finicky-3rd.html
+
 In this example, the Gaddzeit.Kata.Utils directory contains a class, FinickyThirdPartyApp, 
 whose single method, DoSomethingProprietary() throws an exception that is it not licensed
 for DEV machines.
